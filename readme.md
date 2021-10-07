@@ -1,5 +1,5 @@
 # FAF-193 
-#Chetrar Eugeniu
+# Chetrar Eugeniu
 
-##In each directory is Lab with own Readme file explaining the process
+## In each directory is Lab with own Readme file explaining the process
 
