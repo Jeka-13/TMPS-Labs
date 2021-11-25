@@ -13,7 +13,7 @@ Let's suppose we have a person who wants to buy a car. The person goes to the BM
 
 ## Implementation/Explanation
 
-As I've said I've used **Decorator**, **Proxy**
+As I've said I've used **Decorator**, **Proxy**  
 **Decorator** I have used for generating notifications. I have created Interface with method notify
 and depending on the way chosen by the client - it will send notification to specific social network.  
 **Proxy** Simulates the cache system, let's suppose we have a server and in order not to connect everytime
