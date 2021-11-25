@@ -15,7 +15,7 @@ Let's suppose we have a person who wants to buy a car. The person goes to the BM
 ## Implementation/Explanation
 
 As I've said I've used **Builder**, **Singleton** and **Factory**  
-Everything starts in the **Main** by generating a **Singleton** BMW office  
+Everything starts in the **BMW_Office.Main** by generating a **Singleton** BMW office  
 After that is calling the function to choose the type of the car. It's made with the **Builder** pattern  
 According to the type it generates the car, regarding the type.  
 Finally, it asks the client to choose the delivery method. It was made with the **Factory** pattern  
