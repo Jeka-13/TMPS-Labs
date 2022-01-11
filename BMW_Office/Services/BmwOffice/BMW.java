@@ -9,7 +9,8 @@ import BMW_Office.Infrastructure.DeliveryCar.Delivery.AirplaneOrder;
 import BMW_Office.Infrastructure.DeliveryCar.Delivery.Delivery;
 import BMW_Office.Infrastructure.DeliveryCar.Delivery.ShipOrder;
 import BMW_Office.Infrastructure.Notification.*;
-import BMW_Office.Infrastructure.Server.Client;
+import BMW_Office.Infrastructure.PaymentMethods.Card;
+import BMW_Office.Infrastructure.PaymentMethods.PaymentSystem;
 import BMW_Office.Infrastructure.Server.Proxy;
 import BMW_Office.Infrastructure.Server.Server;
 
@@ -111,9 +112,13 @@ public final class BMW {
         }
     }
     public void ConnectToTheServer() {
-        Client client = new Client();
         Server server = new Server();
         Proxy proxy = new Proxy(server);
-        client.ClientAddress(proxy);
+        proxy.Request();
+    }
+
+    public void StartPaying() {
+        PaymentSystem paymentSystem = new PaymentSystem();
+        paymentSystem.setPayment(new Card());
     }
 }

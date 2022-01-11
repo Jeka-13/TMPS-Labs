@@ -9,5 +9,6 @@ public class Main {
         bmw.ChoseModel("Sport car");
         bmw.ChoseMethodDelivery("Ship");
         bmw.ChoseNotification("Facebook");
+        bmw.StartPaying();
     }
 }
